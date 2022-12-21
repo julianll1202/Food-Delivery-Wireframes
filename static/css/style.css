@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    
+}
+
+.side-menu {
+    width: 225px;
+    height: 100%;
+    position: fixed; 
+    background-color: #ff4800;
+}
+
+body .front-page {
+    display: flex;
+    flex-direction: column;
+}
+
+.front-page .header {
+    display: flex;
+    flex-direction: row;
+}
+
+.front-page .popular-rest {
+    display: flex;
+    flex-direction: column;
+}
