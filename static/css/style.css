@@ -163,6 +163,24 @@ body .front-page {
     border-radius: 10px 10px 0 0;
 }
 
+.image-area {
+    position: absolute;
+    top: 95px;
+    
+}
+.fav-buttons {
+    position: relative;
+    left: 220px;
+    color: white;
+}
+
+#unfilled-heart {
+    z-index: 3;
+}
+#filled-heart {
+    z-index: 2;
+}
+
 .restaurant-card .card-details {
     padding: 5px;
 }
