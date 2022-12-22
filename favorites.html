@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FastFoodie</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <script src="https://kit.fontawesome.com/62fafb1513.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div id="sidebar" class="side-menu">
+        <!-- Add all menu buttons -->
+        <ul>
+            <li>
+                <a href="javascript:void(0)" id="close-btn" onclick="closeMenu()">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="index.html" ><i class="fa-solid fa-house"></i> Home</a>
+            </li class="menu-item">
+            <li class="menu-item">
+                <a href="favorites.html" ><i class="fa-solid fa-heart"></i> Favorites</a>
+            </li>
+            
+            <li class="menu-item">
+                <a href="past-orders.html" ><i class="fa-solid fa-receipt"></i> Past orders</a>
+            </li>
+            <li class="menu-item">
+                <a href="#"><i class="fa-solid fa-circle-info"></i> Help</a>
+            </li>
+        </ul>
+    </div>
+    <div class="front-page">
+        <div class="header">
+            <div class="info">
+                <a href="javascript:void(0)" id="open-btn" onclick="openMenu()"><i class="fa-solid fa-arrow-right"></i></a>
+                <h3>FastFoodie</h3>
+                <h5 class="gray-bars"><i class="fa-solid fa-location-dot"></i> Select location | <i class="fa-solid fa-clock"></i> Time</h5>
+                <div class="gray-bars" >
+                    <i class="fa-solid fa-magnifying-glass"></i> 
+                    <input type="text" id="search-bar" value="Search for food, restaurants, etc."> 
+                </div>
+            </div>
+            
+            <div class="butons">
+                <button class="cart-btn"><i class="fa-solid fa-cart-shopping"></i> Cart</button>
+                <div class="user-options">
+                    <div>
+                       <button class="user-menu" onclick="dropdown()"> <i class="fa-solid fa-user"></i> Hi, John Doe</button> 
+                    </div>
+                    
+                    
+                </div>
+                
+            </div>
+            <div class="dropdown-menu" id="usr-menu">
+                <a href="javascript:void(0)"><i class="fa-solid fa-users-rectangle"></i> Account</a>
+                <a href="javascript:void(0)"><i class="fa-solid fa-right-from-bracket"></i> Log Out</a>
+            </div>
+        </div>
+
+    <script src="static/js/test.js"></script>
+</body>
+</html>

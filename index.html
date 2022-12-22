@@ -19,14 +19,14 @@
                 </a>
             </li>
             <li class="menu-item">
-                <a href="#" ><i class="fa-solid fa-house"></i> Home</a>
+                <a href="index.html" ><i class="fa-solid fa-house"></i> Home</a>
             </li class="menu-item">
             <li class="menu-item">
-                <a href="#" ><i class="fa-solid fa-heart"></i> Favorites</a>
+                <a href="favorites.html" ><i class="fa-solid fa-heart"></i> Favorites</a>
             </li>
             
             <li class="menu-item">
-                <a href="#" ><i class="fa-solid fa-receipt"></i> Past orders</a>
+                <a href="past-orders.html" ><i class="fa-solid fa-receipt"></i> Past orders</a>
             </li>
             <li class="menu-item">
                 <a href="#"><i class="fa-solid fa-circle-info"></i> Help</a>
@@ -35,27 +35,115 @@
     </div>
     <div class="front-page">
         <div class="header">
-            <a href="javascript:void(0)" id="open-btn" onclick="openMenu()"><i class="fa-solid fa-arrow-right"></i></a>
-            <h3>FastFoodie</h3>
-            <h5 class="gray-bars"><i class="fa-solid fa-location-dot"></i> Select location | <i class="fa-solid fa-clock"></i> Time</h5>
-            <h5 class="gray-bars"><i class="fa-solid fa-magnifying-glass"></i> Search for food, restaurants, etc.</h5>
-            <div class="butons">
-                <button class="cart-btn">Cart</button>
-                <button class="user-menu">Hi, John Doe</button>
+            <div class="info">
+                <a href="javascript:void(0)" id="open-btn" onclick="openMenu()"><i class="fa-solid fa-arrow-right"></i></a>
+                <h3>FastFoodie</h3>
+                <h5 class="gray-bars"><i class="fa-solid fa-location-dot"></i> Select location | <i class="fa-solid fa-clock"></i> Time</h5>
+                <div class="gray-bars" >
+                    <i class="fa-solid fa-magnifying-glass"></i> 
+                    <input type="text" id="search-bar" value="Search for food, restaurants, etc."> 
+                </div>
             </div>
             
+            <div class="butons">
+                <button class="cart-btn"><i class="fa-solid fa-cart-shopping"></i> Cart</button>
+                <div class="user-options">
+                    <div>
+                       <button class="user-menu" onclick="dropdown()"> <i class="fa-solid fa-user"></i> Hi, John Doe</button> 
+                    </div>
+                    
+                    
+                </div>
+                
+            </div>
+            <div class="dropdown-menu" id="usr-menu">
+                <a href="javascript:void(0)"><i class="fa-solid fa-users-rectangle"></i> Account</a>
+                <a href="javascript:void(0)"><i class="fa-solid fa-right-from-bracket"></i> Log Out</a>
+            </div>
         </div>
         <div class="popular-rest">
             <h3>Popular Restaurants</h3>
             <div class="cards">
                 <div class="restaurant-card">
-                    <img src="" alt="">
-                    <h4>Restaurant name</h4>
+                    <img src="static/img/burgers.jpg" alt="" class="card-img">
                     <div class="card-details">
-                        <h5>Price | Delivery time</h5>
-                        <i></i>
+                        <h4>Dylan's Sports Bar</h4>
+                        <div class="card-info">
+                            <h5>USD$5.20 | 20 min</h5>
+                            <div class="star-grade">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div> 
                     </div>
                 </div>   
+                <div class="restaurant-card">
+                    <img src="static/img/chinese-food.jpg" alt="" class="card-img">
+                    <div class="card-details">
+                        <h4>Golden Dragon</h4>
+                        <div class="card-info">
+                            <h5>USD$3.00 | 10 min</h5>
+                            <div class="star-grade">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <div class="restaurant-card">
+                    <img src="static/img/sushi.jpg" alt="" class="card-img">
+                    <div class="card-details">
+                        <h4>Take Sushi Bar</h4>
+                        <div class="card-info">
+                            <h5>USD$4.50 | 25 min</h5>
+                            <div class="star-grade">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <div class="restaurant-card">
+                    <img src="static/img/donuts.jpg" alt="" class="card-img">
+                    <div class="card-details">
+                        <h4>Homer's Donut Shop</h4>
+                        <div class="card-info">
+                            <h5>USD$2.00 | 10 min</h5>
+                            <div class="star-grade">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <div class="restaurant-card">
+                    <img src="static/img/tacos.jpg" alt="" class="card-img">
+                    <div class="card-details">
+                        <h4>Asadero Las Brasas</h4>
+                        <div class="card-info">
+                            <h5>USD$4.00 | 20 min</h5>
+                            <div class="star-grade">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
             </div>
             
         </div>
@@ -63,8 +151,48 @@
             <h3>All categories</h3>
             <div class="cards">
                 <div class="category">
-                    <img src="" alt="">
-                    <h4>Category</h4>
+                    <img src="static/img/mexican_food.jpg"  class="cat-img card-img " alt="">
+                    <h4>Mexican</h4>
+                </div>
+                <div class="category">
+                    <img src="static/img/coffee.jpg"  class="cat-img card-img " alt="">
+                    <h4>Coffee</h4>
+                </div>
+                <div class="category">
+                    <img src="static/img/desserts.jpg"  class="cat-img card-img " alt="">
+                    <h4>Desserts</h4>
+                </div>
+                <div class="category">
+                    <img src="static/img/tacos.jpg"  class="cat-img card-img " alt="">
+                    <h4>Tacos</h4>
+                </div>
+                <div class="category">
+                    <img src="static/img/salad_2.jpg"  class="cat-img card-img " alt="">
+                    <h4>Salads</h4>
+                </div>
+                <div class="category">
+                    <img src="static/img/italian_food.jpg"  class="cat-img card-img " alt="">
+                    <h4>Italian</h4>
+                </div>
+                <div class="category">
+                    <img src="static/img/sandwich.jpg" class="cat-img card-img " alt="">
+                    <h4>Sandwich</h4>
+                </div>
+                <div class="category">
+                    <img src="static/img/breakfast.jpg" class="cat-img card-img " alt="">
+                    <h4>Breakfast</h4>
+                </div>
+                <div class="category">
+                    <img src="static/img/chinese-food.jpg" class="cat-img card-img " alt="">
+                    <h4>Chinese</h4>
+                </div>
+                <div class="category">
+                    <img src="static/img/sushi.jpg" class="cat-img card-img " alt="">
+                    <h4>Sushi</h4>
+                </div>
+                <div class="category">
+                    <img src="static/img/burgers.jpg" class="cat-img card-img " alt="">
+                    <h4>Burgers</h4>
                 </div>
             </div>
             

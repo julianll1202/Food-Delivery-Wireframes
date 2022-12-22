@@ -56,38 +56,136 @@ body .front-page {
     color: #ff4800;
 }
 
+/* Search bar */
 .gray-bars {
     background-color: #D9D9D9;
-    padding: 3px;
-    padding-left: 5px;
+    padding: 4px 8px 4px 8px;
     border-radius: 20px;
     margin-left: 35px;
     font-weight: 400;
 }
 
-.front-page .buttons {
+.gray-bars input {
+    background-color: #D9D9D9;
+}
+#search-bar {
+    width: 300px;
+}
+
+/* Buttons */
+.butons {
     display: flex;
     flex-direction: row;
     align-content: flex-end;
+    margin-right: 25px;
+    
+}
+
+.butons button {
+    padding: 5px 8px;
+    border-radius: 20px;
+    color: white;
+    font-weight: 700;
 }
 .front-page .cart-btn {
     margin-left: 15px;
     margin-right: 20px;
     background-color: #FFAA00;
-    padding: 5px;
-    border-radius: 20px;
-    color: white;
-
 }
 
+.front-page .user-menu {
+    background-color: #ff4800;   
+}
 
+.user-options {
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-menu {
+    visibility: hidden;
+    position: absolute;
+    top: 42px;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: #D9D9D9;
+    padding: 4px 8px 4px 8px;
+    border-radius: 10px;
+}
+
+.dropdown-menu a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Header */
 .front-page .header {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     margin-top: 15px;
 }
 
+.header .info {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
 .front-page .popular-rest {
     display: flex;
     flex-direction: column;
+    
+}
+
+/* Restaurant cards */
+.cards {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.restaurant-card {
+    display: flex;
+    flex-direction: column;
+    width: 274px;
+    height: 255px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.card-img {
+    width: 272px;
+    height: 203px;
+    border-radius: 10px 10px 0 0;
+}
+
+.restaurant-card .card-details {
+    padding: 5px;
+}
+.card-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card-info .star-grade {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Categories */
+.cat-img {
+    filter: brightness(50%);
+    border-radius: 10px;
+}
+
+.category h4 {
+    position: relative;
+    bottom: 30px;
+    left: 10px;
+    color: white;
 }
