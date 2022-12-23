@@ -23,9 +23,11 @@ function unfavRestaurant() {
 function openOrder() {
     document.getElementById("order-mini").style.visibility = "hidden";
     document.getElementById("order-ext").style.visibility = "visible";
+    document.getElementById("order-mini-2").style.marginTop = "120px";
 }
 
 function collapseOrder() {
     document.getElementById("order-ext").style.visibility = "hidden";
     document.getElementById("order-mini").style.visibility = "visible";
+    document.getElementById("order-mini-2").style.marginTop = "10px";
 }

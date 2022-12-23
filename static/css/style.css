@@ -145,6 +145,7 @@ body .front-page {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    align-content: flex-start;
     flex-wrap: wrap;
 }
 
@@ -196,6 +197,11 @@ body .front-page {
 }
 
 /* Categories */
+.all-categories {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
 .cat-img {
     filter: brightness(50%);
     border-radius: 10px;
@@ -247,7 +253,11 @@ body .front-page {
     position: absolute;
     top: 40px;
     visibility: hidden;
-    width: 760px;
+    width: 1100px;
+}
+
+#order-ext-2 {
+    visibility: hidden;
 }
 .ext-order-img {
     width: 150px;
