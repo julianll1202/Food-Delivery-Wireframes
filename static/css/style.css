@@ -219,7 +219,7 @@ body .front-page {
     margin: 20px auto 0 20px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: #D9D9D9;
     border-radius: 15px;
     padding: 10px;
@@ -228,4 +228,56 @@ body .front-page {
 .order-img {
     width: 105px;
     height: 50px;
+    border-radius: 10px;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.collapse {
+    background-color: #D9D9D9;
+    font-size: 25px;
+}
+
+/* Extended order */
+#order-ext {
+    position: absolute;
+    top: 40px;
+    visibility: hidden;
+    width: 760px;
+}
+.ext-order-img {
+    width: 150px;
+    height: 80px;
+}
+
+.products {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.products p {
+    background-color: white;
+    border: 1px solid black;
+    height: 20px;
+    padding: 2px;
+}
+.product-details {
+    display: flex;
+    flex-direction: column;
+    background-color: #D9D9D9;
+}
+
+.product-details small {
+    color: gray;
+}
+
+.product-details p {
+    background-color: #D9D9D9;
+    border: none;
+    font-size: 15px;
 }

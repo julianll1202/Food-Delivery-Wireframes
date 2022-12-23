@@ -19,3 +19,13 @@ function unfavRestaurant() {
     document.getElementById("filled-heart").style.visibility = "hidden";
     document.getElementById("unfilled-heart").style.visibility = "visible";
 }
+
+function openOrder() {
+    document.getElementById("order-mini").style.visibility = "hidden";
+    document.getElementById("order-ext").style.visibility = "visible";
+}
+
+function collapseOrder() {
+    document.getElementById("order-ext").style.visibility = "hidden";
+    document.getElementById("order-mini").style.visibility = "visible";
+}
