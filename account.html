@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FastFoodie</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <script src="https://kit.fontawesome.com/62fafb1513.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div id="sidebar" class="side-menu">
+        <!-- Add all menu buttons -->
+        <ul>
+            <li>
+                <a href="javascript:void(0)" id="close-btn" onclick="closeMenu()">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="index.html" ><i class="fa-solid fa-house"></i> Home</a>
+            </li class="menu-item">
+            <li class="menu-item">
+                <a href="favorites.html" ><i class="fa-solid fa-heart"></i> Favorites</a>
+            </li>
+            
+            <li class="menu-item">
+                <a href="past-orders.html" ><i class="fa-solid fa-receipt"></i> Past orders</a>
+            </li>
+            <li class="menu-item">
+                <a href="#"><i class="fa-solid fa-circle-info"></i> Help</a>
+            </li>
+        </ul>
+    </div>
+    <div class="front-page">
+        <div class="header">
+            <div class="info">
+                <a href="javascript:void(0)" id="open-btn" onclick="openMenu()"><i class="fa-solid fa-arrow-right"></i></a>
+                <h3>FastFoodie</h3>
+                <h5 class="gray-bars"><i class="fa-solid fa-location-dot"></i> <span class="wide">Select location</span> <span class="mini">Location</span> | <i class="fa-solid fa-clock"></i> <span class="nano">Time</span> </h5>
+                <div class="gray-bars" >
+                    <i class="fa-solid fa-magnifying-glass"></i> 
+                    <input type="text" id="search-bar" value="Search for food, restaurants, etc."> 
+                    
+                </div>
+            </div>
+            
+            <div class="butons">
+                <button class="cart-btn"><i class="fa-solid fa-cart-shopping"></i> <span class="wide">Cart</span> </button>
+                <div class="user-options">
+                    <div>
+                       <button class="user-menu" onclick="dropdown()"> <i class="fa-solid fa-user"></i> <span class="wide">Hi, John Doe</span> </button> 
+                    </div>
+                    
+                    
+                </div>
+                
+            </div>
+            <div class="dropdown-menu" id="usr-menu">
+                <a href="account.html"><i class="fa-solid fa-users-rectangle"></i> Account</a>
+                <a href="logged_out.html"><i class="fa-solid fa-right-from-bracket"></i> Log Out</a>
+            </div>
+        </div>
+        <div class="options">
+            <div class="side-options">
+                <button class="acc-option" id="accInfo" onclick="openInfo()">Account information</button>
+                <button class="acc-option" id="accPay" onclick="openPayment()">Payment methods</button>
+                <button class="acc-option" id="accSec" onclick="openSecurity()">Account security</button>
+            </div>
+            <div class="option" id="userInfo">
+                <i class="fa-solid fa-user" id="usr-img"></i>
+                <div class="user-name">
+                    <div>
+                        <h3>First name</h3>
+                        <input type="text" name="first_name" value="John" id="">
+                    </div>
+                    <div class="">
+                        <h3>Last name</h3>
+                        <input type="text" name="last_name" value="Doe" id="">
+                    </div>
+                </div>
+                <h3>E-mail address</h3>
+                <input type="email" name="" id="" value="john.doe@gmail.com">
+                <h3>Phone number</h3>
+                <input type="text" name="phone" id="" value="5646789">
+                <h3>Country</h3>
+                <select name="countries" id="">
+                    <option value="mexico">Mexico</option>
+                    <option value="usa">United States</option>
+                    <option value="canada">Canada</option>
+                    <option value="france">France</option>
+                </select>
+                
+            </div>
+            <div class="option" id="userPayment">
+                <h3>Payment methods</h3>
+                <h4><i class="fa-solid fa-credit-card"></i> Credit card ending in 4567</h4>
+                <h4><i class="fa-solid fa-credit-card"></i> Debit card ending in 1234</h4>
+                <h4><i class="fa-solid fa-money-bills"></i> Cash</h4>
+                <h4><i class="fa-brands fa-paypal"></i> PayPal</h4>
+                <button>Add <i class="fa-solid fa-plus"></i></button>
+            </div>
+
+            <div class="option" id="userSecurity">
+                <h3>Password</h3>
+                <input type="password" name="" value="adaddasdas" id="">
+                <button><i class="fa-solid fa-pen-to-square"></i></button>
+                <h3>Two-step verification</h3>
+                <button>Enable</button>
+            </div>
+        </div>
+    <script src="static/js/test.js"></script>
+</body>
+</html>
